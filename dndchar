@@ -1,0 +1,1694 @@
+<!doctype html>
+<html>
+<head>
+<title> dungeons and dragons character maker </title>
+
+<style>
+.center {
+    margin: auto;
+    width: 50%;
+}
+</style>
+<style>
+
+body {
+    background-image: url("http://static.tumblr.com/236298639e3a543bf60d329b793acc09/qxwztb4/QIPnji4pb/tumblr_static_enu6cuaehuok8oog4ogwsgk08.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	
+}
+ table {
+	
+    border-collapse: collapse;
+	border-outset: outset;
+	margin: auto;
+    width: 50%;
+	background-color:rgba(255,255,255,0.3);
+}
+
+table, th, td {
+    border: 5px solid black;
+}
+#baseStats {
+	
+}
+</style>
+        <script> 
+        //first letter of name and title
+          var rantext = "";
+            var possible = "bcdfghjklmnprstvw";
+            for( var i=0; i < 1; i++ )
+                rantext += possible.charAt(Math.floor(Math.random() * possible.length));
+                
+        //third letter of name        
+            var rantext1 = "";
+            var possible = "bcdfghjklmnprstvw- ";
+            for( var i=0; i < 1; i++ )
+                rantext1 += possible.charAt(Math.floor(Math.random() * possible.length));
+            
+         //fourth letter of name   
+            var rantext2 = "";
+            var possible = "bcdfghjklmnprstvw";
+            for( var i=0; i < 1; i++ )
+                rantext2 += possible.charAt(Math.floor(Math.random() * possible.length));
+            
+        //fifth letter of name		
+          var rantext3 = "";
+            var possible = "aaaaeeeioou";
+            for( var i=0; i < 1; i++ )
+                rantext3 += possible.charAt(Math.floor(Math.random() * possible.length));
+        //sixth letter of name		
+          var rantext4 = "";
+            var possible = "bcdfghjklmnprstvw";
+            for( var i=0; i < 1; i++ )
+                rantext4 += possible.charAt(Math.floor(Math.random() * possible.length));
+        //second letter of name (vowel)		
+          var rantext5 = "";
+            var possible = "aaaaeeeioou";
+            for( var i=0; i < 1; i++ )
+                rantext5 += possible.charAt(Math.floor(Math.random() * possible.length));
+        //seventh letter of name		
+          var rantext6 = "";
+            var possible = "bcdfghjklmnprstvw";
+            for( var i=0; i < 1; i++ )
+                rantext6 += possible.charAt(Math.floor(Math.random() * possible.length));
+        //determines title set (1 or 2 using boolean)        
+            var titleOp = Math.random()<.5;
+        
+        //ranName is multiple letters, different from rantext 1-6	
+        var ranName = (rantext + rantext5 + rantext1 + rantext2);
+        
+        //random title genorator 
+        
+        if (titleOp) {//if tittle op is true, then do set 1
+          if (rantext == 'b'){
+            title = 'bringer of justice';
+          }
+          else if (rantext == 'c'){
+            title = 'creater of light';
+          }
+          else if (rantext == 'd'){
+            title = 'desireable';
+          }
+          else if (rantext == 'f'){
+            title = 'forgotten';
+          }
+          else if (rantext == 'g'){
+            title = 'great';
+          }
+          else if (rantext == 'h'){
+            title = 'healer';
+          }
+          else if (rantext == 'j'){
+            title = 'jolly';
+          }
+          else if (rantext == 'k'){
+            title = 'killer ';
+          }
+          else  if (rantext == 'l'){
+            title = 'lethalist ';
+          }
+          else  if (rantext == 'm'){
+            title = 'morkadanian';
+          }
+          else if (rantext == 'n'){
+            title = '[put your own title here, seriously people, coming up with these is hard]';
+          }
+          else if (rantext == 'p'){
+            title = 'prestidiusly bad speller (and proud of it too)';
+          }
+          else if (rantext == 'r'){
+            title = 'remembered';
+          }
+          else if (rantext == 's'){
+            title = '[not so] stylish';
+          }
+          else if (rantext == 't'){
+            title = 'triumphant';
+          }
+          else if (rantext == 'v'){
+            title = 'victourious';
+          }
+          else if (rantext == 'w'){
+            title = 'white';
+          }
+          else {
+            title = 'prince of greater arendalia ';
+          }
+        //set one ends
+        }
+        //set two
+        else if (rantext == 'b'){
+            title = 'Brilliant';
+          }
+          else if (rantext == 'c'){
+            title = 'cowardly';
+          }
+          else if (rantext == 'd'){
+            title = 'devout';
+          }
+          else if (rantext == 'f'){
+            title = 'Free';
+          }
+          else if (rantext == 'g'){
+            title = 'Gracious';
+          }
+          else if (rantext == 'h'){
+            title = 'Honest';
+          }
+          else if (rantext == 'j'){
+            title = 'Joyful';
+          }
+          else if (rantext == 'k'){
+            title = 'keen ';
+          }
+          else  if (rantext == 'l'){
+            title = 'Loyal ';
+          }
+          else  if (rantext == 'm'){
+            title = 'Merry';
+          }
+          else if (rantext == 'n'){
+            title = 'Neat';
+          }
+          else if (rantext == 'p'){
+            title = 'Proud';
+          }
+          else if (rantext == 'r'){
+            title = 'Responsible';
+          }
+          else if (rantext == 's'){
+            title = 'short';
+          }
+          else if (rantext == 't'){
+            title = 'tickalish';
+          }
+          else if (rantext == 'v'){
+            title = 'vain';
+          }
+          else if (rantext == 'w'){
+            title = 'Wild';
+          }
+          else {
+            title = 'haunted';
+          }//set two ends
+        var ranName = (ranName + rantext3 + rantext4 + rantext6 + ' the ' + title);//assembling all random variables
+        
+        </script>
+</head>
+<body>
+
+<table id="baseStats" style="" border="bold" >
+<tbody>
+<tr>
+<td colspan="2" width="241">
+Name:
+<input type="text" id="nameText">
+
+<button onclick="nameFunction()">Set</button>
+
+<p id="namePrint"></p>
+
+      <script>
+      nameFunction();
+      function nameFunction() {
+          var x = document.getElementById("nameText").value;
+          document.getElementById("namePrint").innerHTML = x;
+        var rantext = "";
+          var possible = "bcdfghjklmnprstvw";
+      
+          for( var i=0; i < 1; i++ )
+              rantext += possible.charAt(Math.floor(Math.random() * possible.length));
+              
+              
+          var rantext1 = "";
+          var possible = "bcdfghjklmnprstvw- ";
+          for( var i=0; i < 1; i++ )
+              rantext1 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+          
+          var rantext2 = "";
+          var possible = "bcdfghjklmnprstvw";
+          for( var i=0; i < 1; i++ )
+              rantext2 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+          
+        var rantext3 = "";
+          var possible = "aaaaeeeioou";
+      
+          for( var i=0; i < 1; i++ )
+              rantext3 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+        var rantext4 = "";
+          var possible = "bcdfghjklmnprstvw";
+          for( var i=0; i < 1; i++ )
+              rantext4 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+        var rantext5 = "";
+          var possible = "aaaaeeeioou";
+      
+          for( var i=0; i < 1; i++ )
+              rantext5 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+        var rantext6 = "";
+          var possible = "bcdfghjklmnprstvw";
+          for( var i=0; i < 1; i++ )
+              rantext6 += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+        var titleOp = Math.random()<.5;
+      
+              
+            
+      var ranName = (rantext + rantext5 + rantext1 + rantext2);
+      
+      //random title genorator 
+      if (titleOp) {
+        if (rantext == 'b'){
+          title = 'bringer of justice';
+        }
+        else if (rantext == 'c'){
+          title = 'creater of light';
+        }
+        else if (rantext == 'd'){
+          title = 'desireable';
+        }
+        else if (rantext == 'f'){
+          title = 'forgotten';
+        }
+        else if (rantext == 'g'){
+          title = 'great';
+        }
+        else if (rantext == 'h'){
+          title = 'healer';
+        }
+        else if (rantext == 'j'){
+          title = 'jolly';
+        }
+        else if (rantext == 'k'){
+          title = 'killer ';
+        }
+        else  if (rantext == 'l'){
+          title = 'lethalist ';
+        }
+        else  if (rantext == 'm'){
+          title = 'morkadanian';
+        }
+        else if (rantext == 'n'){
+          title = '[put your own title here, seriously people, coming up with these is hard]';
+        }
+        else if (rantext == 'p'){
+          title = 'prestidiusly bad speller (and proud of it too)';
+        }
+        else if (rantext == 'r'){
+          title = 'remembered';
+        }
+        else if (rantext == 's'){
+          title = '[not so] stylish';
+        }
+        else if (rantext == 't'){
+          title = 'triumphant';
+        }
+        else if (rantext == 'v'){
+          title = 'victourious';
+        }
+        else if (rantext == 'w'){
+          title = 'white';
+        }
+        else {
+          title = 'prince of greater arendalia ';
+        }
+      }else {if (rantext == 'b'){
+          title = 'Brilliant';
+        }
+        else if (rantext == 'c'){
+          title = 'cowardly';
+        }
+        else if (rantext == 'd'){
+          title = 'devout';
+        }
+        else if (rantext == 'f'){
+          title = 'Free';
+        }
+        else if (rantext == 'g'){
+          title = 'Gracious';
+        }
+        else if (rantext == 'h'){
+          title = 'Honest';
+        }
+        else if (rantext == 'j'){
+          title = 'Joyful';
+        }
+        else if (rantext == 'k'){
+          title = 'keen ';
+        }
+        else  if (rantext == 'l'){
+          title = 'Loyal ';
+        }
+        else  if (rantext == 'm'){
+          title = 'Merry';
+        }
+        else if (rantext == 'n'){
+          title = 'Neat';
+        }
+        else if (rantext == 'p'){
+          title = 'Proud';
+        }
+        else if (rantext == 'r'){
+          title = 'Responsible';
+        }
+        else if (rantext == 's'){
+          title = 'short';
+        }
+        else if (rantext == 't'){
+          title = 'tickalish';
+        }
+        else if (rantext == 'v'){
+          title = 'vain';
+        }
+        else if (rantext == 'w'){
+          title = 'Wild';
+        }
+        else {
+          title = 'haunted';
+        }}
+        var ranName = (ranName + rantext3 + rantext4 + rantext6 + ' the ' + title);
+        document.getElementById('nameText').value = ranName;}
+      
+      
+      
+      </script>
+</td>
+<td rowspan="5" width="114">
+<p><strong>XP </strong>:&nbsp;</p>
+<input type="number" id='xpVal'>
+<button onclick="xpFunction()">Add</button>
+<p id="xpPrint"></p>
+
+
+<script>
+function xpFunction() {
+    	var x = document.getElementById("xpVal").value;
+    document.getElementById("xpPrint").innerHTML = x;
+ 
+}
+</script>
+
+
+
+<p>&nbsp;</p>
+<p>PP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>GP:</strong></p>
+<p>SP:</p>
+<p>CP:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="5" width="174">
+<p><strong>Magic:</strong></p>
+</td>
+<td colspan="7" width="192">
+<p><strong>Powerpoints:</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="241">
+<p>Age:</p>
+<p>Alignment:</p>
+</td>
+<td width="48">
+<p>level</p>
+<p>ppnt</p>
+</td>
+<td width="32">
+<p>0</p>
+<p>---</p>
+</td>
+<td width="32">
+<p>1</p>
+<p>1</p>
+</td>
+<td width="32">
+<p>2</p>
+<p>3</p>
+</td>
+<td width="32">
+<p>3</p>
+<p>5</p>
+</td>
+<td width="32">
+<p>4</p>
+<p>7</p>
+</td>
+<td width="32">
+<p>5</p>
+<p>9</p>
+</td>
+<td width="32">
+<p>6</p>
+<p>11</p>
+</td>
+<td width="32">
+<p>7</p>
+<p>13</p>
+</td>
+<td width="32">
+<p>8</p>
+<p>15</p>
+</td>
+<td width="32">
+<p>9</p>
+<p>17</p>
+</td>
+</tr>
+<tr>
+<td width="73">
+<p>Gender:</p>
+<p><strong>Race:</strong></p>
+</td>
+<td width="168">
+<p>Height:</p>
+<p>Weight:</p>
+<p>Speed:_ _ _ _ (x_____)</p>
+</td>
+<td rowspan="3" width="48">
+<p>Spell</p>
+<p>/day</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>total</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td style="width: 32px;" rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+<p>&nbsp;</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td style="width: 32px;" rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+<td rowspan="3" width="32">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>---</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="241">
+<p>Rage:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Other:</p>
+<p>Wild shape:</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="241">
+<p><strong>Class and level:</strong></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="bold" width="726">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Strength: </strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="173">
+<p><strong>HP</strong>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;/</p>
+</td>
+<td width="209">
+<p>Armor</p>
+</td>
+<td width="88">
+<p>Info</p>
+</td>
+</tr>
+<tr>
+<td width="103">
+<p><strong>Constitution:</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="173">
+<p><strong>Base attack:</strong></p>
+<p>____/____/____/____/____</p>
+</td>
+<td width="209">
+<p>&nbsp;</p>
+</td>
+<td width="88">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="103">
+<p><strong>Dexterity:</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="173">
+<p>Fortitude (con):</p>
+</td>
+<td width="209">
+<p>&nbsp;</p>
+</td>
+<td width="88">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="103">
+<p><strong>Intelligence:</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="173">
+<p>Reflex (dex):</p>
+</td>
+<td width="209">
+<p>&nbsp;</p>
+</td>
+<td width="88">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="103">
+<p><strong>Wisdom:</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="173">
+<p>Will (wis):</p>
+</td>
+<td width="209">
+<p>&nbsp;</p>
+</td>
+<td width="88">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="103">
+<p><strong>Charisma:</strong></p>
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="154">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="125">
+<p><strong>AC: (10+dex mod+ armor)</strong></p>
+</td>
+<td width="48">
+<p>&nbsp;</p>
+</td>
+<td width="209">
+<p>&nbsp;</p>
+</td>
+<td width="88">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="bold" width="727">
+<tbody>
+<tr>
+<td colspan="2" width="361">
+<p><strong>Feats/Skills</strong></p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p><strong>Inventory</strong></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="361">
+<p>&nbsp;</p>
+</td>
+<td width="366">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="205">
+<p><strong>Weapon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+</td>
+<td colspan="2" width="522">
+<p><strong>Weapon Info</strong></p>
+</td>
+</tr>
+<tr>
+<td width="205">
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="522">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="205">
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="522">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="205">
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="522">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="bold" width="738">
+<tbody>
+<tr>
+<td width="369">
+<p><strong>Feats/skills</strong></p>
+</td>
+<td width="369">
+<p><strong>Inventory</strong></p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+<td width="369">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Spell info:</strong></p>
+<table border="bold" width="738">
+<tbody>
+<tr>
+<td width="55">
+<p><strong>Spells</strong></p>
+<p><strong>LVL</strong></p>
+</td>
+<td width="305">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td width="66">
+<p><strong>Spells</strong></p>
+<p><strong>LVL</strong></p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="55">
+<p>&nbsp;</p>
+</td>
+<td width="305">
+<p>&nbsp;</p>
+</td>
+<td width="66">
+<p>&nbsp;</p>
+</td>
+<td width="312">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Speed:</strong></p>
+<table border="bold">
+<tbody>
+<tr>
+<td width="118">
+<p>Base land</p>
+</td>
+<td width="118">
+<p>Fly</p>
+</td>
+<td width="118">
+<p>Swim</p>
+</td>
+<td width="118">
+<p>Climb</p>
+</td>
+<td width="118">
+<p>Burrow</p>
+</td>
+</tr>
+<tr>
+<td width="118">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</td>
+<td width="118">
+<p>&nbsp;</p>
+</td>
+<td width="118">
+<p>&nbsp;</p>
+</td>
+<td width="118">
+<p>&nbsp;</p>
+</td>
+<td width="118">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>Vision</strong>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Low Light&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Superior Lowlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sonar _____Ft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Radar _____ Ft</p>
+<p>&nbsp;</p>
+<p>Dark Vision ______ Ft&nbsp;&nbsp;&nbsp; Blind sense _____ Ft&nbsp;&nbsp;&nbsp; Blind Sight _____ Ft&nbsp;&nbsp;&nbsp; Tremor sense_____ Ft</p>
+<p>&nbsp;</p>
+<p><strong>Description:</strong></p>
+<p>&nbsp;</p>
+<p>Hair:</p>
+<p>Skin:</p>
+<p>Eye:</p>
+<p>Ear:</p>
+<p>Facial hair:</p>
+<p>Other Facial Features:</p>
+<p>&nbsp;</p>
+<p>Torso:</p>
+<p>Clothing:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Arms:</p>
+<p>Legs:</p>
+<p>Feet:</p>
+<p>Hands:</p>
+<p>Special Skin features:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Wings:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Other appendages:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Titles:</strong></p>
+<p><strong>Notes:&shy;</strong></p>
+<p><strong>&nbsp;</strong></p>
+</body>
+</html>
